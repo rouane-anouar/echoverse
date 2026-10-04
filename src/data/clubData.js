@@ -1,0 +1,131 @@
+export const clubInfo = {
+  name: "EchOverse",
+  fullName: "EchOverse Club",
+  arabicName: "النادي الإعلامي لكلية العلوم والتكنولوجيا",
+  university: "جامعة محمد خيضر بسكرة",
+  universityEn: "Mohamed Khider University of Biskra",
+  faculty: "كلية العلوم والتكنولوجيا",
+  facultyEn: "Faculty of Science and Technology",
+  slogan: "نصنع الحدث، نوثّق اللحظة، ونروي القصة.",
+  description:
+    "إيكوفيرس هو النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة، مساحة طلابية تجمع بين الإعلام، الإبداع وصناعة التجارب. نعمل بشغف على التغطيات الإعلامية، المقابلات، صناعة المحتوى وتنظيم وصناعة الفعاليات، لننقل الحياة الجامعية بصورة أكثر قربًا وتأثيرًا.",
+  awardTitle: "أفضل نادي لكلية العلوم والتكنولوجيا",
+  awardSubtitle: "Best Club of the Faculty of Science and Technology",
+  awardDescription:
+    "تتويج رسمي يعكس تميز النادي واحترافية أعضائه في توثيق وتنظيم أبرز محطات الكلية وصناعة حضور إعلامي ملهم داخل الحرم الجامعي.",
+  social: {
+    instagram: "https://www.instagram.com/echoverse.club/",
+    instagramHandle: "@echoverse.club",
+    facebook: "https://www.facebook.com/profile.php?id=61587251284713",
+    facebookName: "EchOverse Club",
+    email: "echoverse_club@univ-biskra.dz",
+  },
+};
+
+export const activitiesData = [
+  {
+    id: "coverage",
+    title: "التغطيات الإعلامية",
+    titleEn: "Media Coverage",
+    description:
+      "مواكبة وتوثيق الفعاليات، المؤتمرات، والنشاطات الجامعية بالصورة عالية الجودة والفيديو الاحترافي لنقل تفاصيل الحدث أولاً بأول.",
+    icon: "camera",
+    tags: ["تصوير فوتوغرافي", "فيديو عالي الدقة", "تغطية ميدانية فورية"],
+  },
+  {
+    id: "interviews",
+    title: "المقابلات والحوارات",
+    titleEn: "Interviews & Talks",
+    description:
+      "فتح مساحات للحوار الهادف وإجراء لقاءات مع الطلبة المبتكرين، الأساتذة، والضيوف لتوثيق قصص النجاح وإثراء الوعي الأكاديمي.",
+    icon: "mic",
+    tags: ["لقاءات حوارية", "حوارات مع الأساتذة", "بودكاست طلابي"],
+  },
+  {
+    id: "content",
+    title: "صناعة المحتوى",
+    titleEn: "Content Creation",
+    description:
+      "تحويل الأفكار والطاقات الطلابية إلى محتوى بصري وتفاعلي مميز (ريلز، تصميم جرافيكي، وتغطيات قصيرة) يخاطب جيل الشباب.",
+    icon: "clapperboard",
+    tags: ["فيديوهات قصيرة (Reels)", "تصميم جرافيكي", "سرد قصصي (Storytelling)"],
+  },
+  {
+    id: "events",
+    title: "تنظيم وصناعة الفعاليات",
+    titleEn: "Event Production",
+    description:
+      "المساهمة الفاعلة في تخطيط، تصميم، وإخراج الفعاليات والملتقيات الجامعية وصناعة تجارب طلابية ملهمة ومحفزة تخلد في الذاكرة.",
+    icon: "calendar-star",
+    tags: ["إدارة الفعاليات", "تنسيق المنصات", "صناعة التجارب"],
+  },
+];
+
+export const galleryPhotos = [
+  {
+    id: "team-dean",
+    webp: "./images/team-dean.webp",
+    jpg: "./images/team-dean.jpg",
+    title: "فريق EchOverse رفقة عميد الكلية",
+    caption: "صورة رسمية تجمع أعضاء نادي EchOverse رفقة عميد كلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة.",
+    category: "events",
+    categoryLabel: "الفعاليات والتغطيات",
+    featured: true,
+    aspect: "landscape",
+  },
+  {
+    id: "award-faculty",
+    webp: "./images/award-faculty.webp",
+    jpg: "./images/award-faculty.jpg",
+    title: "درع التميز وجائزة أفضل نادي",
+    caption: "أعضاء النادي يتسلمون درع التميز وشهادة التقدير رفقة عميد الكلية والأساتذة في قاعة المحاضرات عمر عساسي.",
+    category: "awards",
+    categoryLabel: "التكريمات والإنجازات",
+    featured: true,
+    aspect: "landscape",
+  },
+  {
+    id: "award-rector",
+    webp: "./images/award-rector.webp",
+    jpg: "./images/award-rector.jpg",
+    title: "تكريم النادي مع مدير الجامعة",
+    caption: "لحظة فخر تجمع أعضاء النادي مع السيد مدير جامعة محمد خيضر بسكرة بدرع التميز الطلابي.",
+    category: "awards",
+    categoryLabel: "التكريمات والإنجازات",
+    featured: false,
+    aspect: "landscape",
+  },
+  {
+    id: "showcase-presentation",
+    webp: "./images/showcase-presentation.webp",
+    jpg: "./images/showcase-presentation.jpg",
+    title: "استعراض الإنتاج الإعلامي للقيادة الجامعية",
+    caption: "عضو النادي يستعرض المشاريع والإنتاجات الرقمية أمام مدير الجامعة وعميد كلية العلوم والتكنولوجيا.",
+    category: "behind",
+    categoryLabel: "الكواليس والإنتاج",
+    featured: false,
+    aspect: "landscape",
+  },
+  {
+    id: "media-equipment",
+    webp: "./images/media-equipment.webp",
+    jpg: "./images/media-equipment.jpg",
+    title: "عتاد التصوير والمعدات الصوتية الميدانية",
+    caption: "استعراض كاميرات التصوير الاحترافية والميكروفونات وأجهزة البث الميداني المستخدمة في التغطيات الحية.",
+    category: "behind",
+    categoryLabel: "الكواليس والإنتاج",
+    featured: false,
+    aspect: "portrait",
+  },
+  {
+    id: "event-outdoor",
+    webp: "./images/event-outdoor.webp",
+    jpg: "./images/event-outdoor.jpg",
+    title: "تغطية الفعاليات الميدانية للكلية",
+    caption: "أعضاء النادي بالبطاقات التنظيمية برفقة عميد الكلية ورؤساء الأقسام والأساتذة في الساحة الأكاديمية.",
+    category: "events",
+    categoryLabel: "الفعاليات والتغطيات",
+    featured: false,
+    aspect: "landscape",
+  },
+];
