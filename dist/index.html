@@ -3,861 +3,381 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>EchOverse Club | النادي الإعلامي لكلية العلوم والتكنولوجيا - جامعة بسكرة</title>
+    <title>EchOverse — النادي الإعلامي لكلية العلوم والتكنولوجيا</title>
     
     <!-- Meta Information -->
-    <meta name="description" content="الموقع الرسمي لنادي EchOverse، النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة. توثيق الفعاليات، المقابلات، وصناعة المحتوى الطلابي. الحائز على لقب أفضل نادي بكلية العلوم والتكنولوجيا." />
-    <meta name="author" content="EchOverse Club" />
-    <meta name="theme-color" content="#090b0e" />
+    <meta name="description" content="إيكوفيرس هو النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة. نوثّق تفاصيل الحياة الجامعية بالصورة والكلمة." />
+    <meta name="theme-color" content="#0b0b0b" />
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="EchOverse Club | النادي الإعلامي لكلية العلوم والتكنولوجيا" />
-    <meta property="og:description" content="الموقع الرسمي لنادي EchOverse، النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة. نصنع الحدث، نوثّق اللحظة، ونروي القصة." />
+    <meta property="og:title" content="EchOverse — النادي الإعلامي لكلية العلوم والتكنولوجيا" />
+    <meta property="og:description" content="النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة." />
     <meta property="og:image" content="./assets/og-image-Dvm2V0gq.jpg" />
     <meta property="og:locale" content="ar_DZ" />
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="EchOverse Club | النادي الإعلامي لكلية العلوم والتكنولوجيا" />
-    <meta name="twitter:description" content="الموقع الرسمي لنادي EchOverse - جامعة محمد خيضر بسكرة." />
-    <meta name="twitter:image" content="./assets/og-image-Dvm2V0gq.jpg" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="./assets/favicon-CogMFaJD.svg" />
     
-    <!-- Google Fonts: Alexandria (Arabic) & Plus Jakarta Sans (Latin) -->
+    <!-- Typography: Alexandria & Syne -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
     
-    <!-- Production Stylesheet -->
-    <link rel="stylesheet" crossorigin href="./assets/index--Up7vIVU.css">
+    <!-- Editorial Stylesheet -->
+    <link rel="stylesheet" crossorigin href="./assets/index-BdOlGJfi.css">
   </head>
   <body>
-    <!-- A. Sticky Navigation -->
-    <header class="navbar-header">
-      <div class="container nav-container">
-        <!-- Brand Logo / Wordmark -->
-        <a href="#hero" class="nav-brand">
-          <div class="brand-symbol">
-            <span class="brand-dot"></span>
-            <span class="brand-ring"></span>
-          </div>
-          <div class="brand-text-group">
-            <span class="brand-name font-latin">EchOverse</span>
-            <span class="brand-badge">النادي الإعلامي</span>
-          </div>
+    <!-- Top Navigation -->
+    <nav class="site-nav" aria-label="التنقل الرئيسي">
+      <div class="container nav-inner">
+        <a href="#hero" class="nav-wordmark">EchOverse</a>
+
+        <ul class="nav-menu-desktop">
+          <li><a href="#about" class="nav-link">من نحن</a></li>
+          <li><a href="#activities" class="nav-link">أنشطتنا</a></li>
+          <li><a href="#achievement" class="nav-link">التتويج</a></li>
+          <li><a href="#archive" class="nav-link">الأرشيف</a></li>
+          <li><a href="#contact" class="nav-link">تواصل</a></li>
+        </ul>
+
+        <a
+          href="https://www.instagram.com/echoverse.club/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-insta-link"
+          aria-label="Instagram profile"
+        >
+          <span>Instagram</span>
+          <span aria-hidden="true">↗</span>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="desktop-nav" aria-label="التنقل الرئيسي">
-          <ul class="nav-list">
-            <li><a href="#hero" class="nav-link">الرئيسية</a></li>
-            <li><a href="#about" class="nav-link">من نحن</a></li>
-            <li><a href="#featured-photo" class="nav-link">لقاء العميد</a></li>
-            <li><a href="#activities" class="nav-link">أنشطتنا</a></li>
-            <li><a href="#achievement" class="nav-link">إنجازنا</a></li>
-            <li><a href="#gallery" class="nav-link">المعرض</a></li>
-            <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
-          </ul>
-        </nav>
+        <button type="button" class="nav-mobile-toggle" aria-label="فتح القائمة">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="8" y2="8"/><line x1="4" x2="20" y1="16" y2="16"/></svg>
+        </button>
+      </div>
 
-        <!-- Desktop Quick Instagram CTA & Mobile Toggle -->
-        <div class="nav-actions">
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-nav-overlay" role="dialog" aria-label="قائمة الهاتف">
+        <div class="mobile-nav-header">
+          <span class="nav-wordmark">EchOverse</span>
+          <button type="button" class="mobile-close-btn" aria-label="إغلاق القائمة">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+          </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#team-dean">فريق العمل</a></li>
+          <li><a href="#activities">أنشطتنا</a></li>
+          <li><a href="#achievement">التتويج</a></li>
+          <li><a href="#archive">الأرشيف</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+
+        <div class="mobile-nav-footer">
           <a
             href="https://www.instagram.com/echoverse.club/"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn btn-instagram nav-insta-btn"
-            aria-label="متابعة نادي EchOverse على إنستغرام"
+            class="hero-insta-btn"
+            style="width: 100%; justify-content: center;"
           >
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            <span class="font-latin">Instagram</span>
+            <span>Instagram</span>
+            <span>↗</span>
           </a>
-
-          <button
-            type="button"
-            class="mobile-toggle-btn"
-            aria-label="فتح وإغلاق القائمة"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          </button>
         </div>
       </div>
+    </nav>
 
-      <!-- Mobile Drawer Navigation -->
-      <div class="mobile-drawer-backdrop">
-        <div class="mobile-drawer" role="dialog" aria-label="قائمة التنقل للهواتف">
-          <div class="mobile-drawer-header">
-            <div class="brand-text-group">
-              <span class="brand-name font-latin">EchOverse</span>
-              <span class="brand-badge">النادي الإعلامي</span>
-            </div>
-            <button type="button" class="close-drawer-btn" aria-label="إغلاق القائمة">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
-            </button>
-          </div>
-
-          <ul class="mobile-nav-list">
-            <li><a href="#hero" class="mobile-nav-link">الرئيسية</a></li>
-            <li><a href="#about" class="mobile-nav-link">من نحن</a></li>
-            <li><a href="#featured-photo" class="mobile-nav-link">لقاء العميد</a></li>
-            <li><a href="#activities" class="mobile-nav-link">أنشطتنا</a></li>
-            <li><a href="#achievement" class="mobile-nav-link">إنجازنا التكريمي</a></li>
-            <li><a href="#gallery" class="mobile-nav-link">معرض الصور</a></li>
-            <li><a href="#contact" class="mobile-nav-link">تواصل معنا</a></li>
-          </ul>
-
-          <div class="mobile-drawer-footer">
-            <a
-              href="https://www.instagram.com/echoverse.club/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-instagram w-full"
-            >
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              <span>متابعتنا على إنستغرام</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <!-- B. Hero Section -->
+    <main>
+      <!-- 01 — HERO (Editorial Magazine Cover) -->
       <section id="hero" class="hero-section">
-        <div class="container hero-container">
-          <!-- Top Affiliation Badge -->
-          <div class="hero-eyebrow">
-            <span class="live-pulse"></span>
-            <span class="eyebrow-text">
-              جامعة محمد خيضر بسكرة • كلية العلوم والتكنولوجيا
-            </span>
-          </div>
-
-          <!-- Hero Title & Identity -->
-          <div class="hero-content">
-            <h1 class="hero-title">
-              <span class="hero-brand font-latin">EchOverse</span>
-              <span class="hero-tagline">النادي الإعلامي لكلية العلوم والتكنولوجيا</span>
-            </h1>
-
-            <p class="hero-motto">
-              نصنع الحدث، نوثّق اللحظة، ونروي القصة.
-            </p>
-
-            <p class="hero-lead">
-              المساحة الطلابية الأولى للتوثيق المرئي، المقابلات الأكاديمية، صناعة المحتوى، وإخراج الفعاليات الكبرى برؤية شبابية واحترافية.
-            </p>
-
-            <!-- Action CTAs -->
-            <div class="hero-cta-group">
-              <a href="#about" class="btn btn-primary hero-btn-main">
-                <span>اكتشف النادي</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-              </a>
-
-              <a
-                href="https://www.instagram.com/echoverse.club/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-instagram hero-btn-insta"
-                aria-label="الانتقال إلى حساب نادي EchOverse على إنستغرام"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                <span>تابعنا على إنستغرام</span>
-              </a>
-            </div>
-
-            <!-- Key Quick Badges Bar -->
-            <div class="hero-highlights">
-              <div class="hero-highlight-item highlight-award">
-                <div class="highlight-icon-wrap gold">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                </div>
-                <div class="highlight-text-wrap">
-                  <strong class="highlight-strong">أفضل نادي</strong>
-                  <span class="highlight-sub">بكلية العلوم والتكنولوجيا</span>
-                </div>
-              </div>
-
-              <div class="hero-highlight-item">
-                <div class="highlight-icon-wrap cyan">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-                </div>
-                <div class="highlight-text-wrap">
-                  <strong class="highlight-strong">تغطيات فورية</strong>
-                  <span class="highlight-sub">صورة وفيديو احترافي</span>
-                </div>
-              </div>
-
-              <div class="hero-highlight-item">
-                <div class="highlight-icon-wrap blue">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
-                </div>
-                <div class="highlight-text-wrap">
-                  <strong class="highlight-strong">حوارات ومقابلات</strong>
-                  <span class="highlight-sub">صوت الطالب والأستاذ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Ambient Visual Media Accent -->
-          <div class="hero-media-ticker" aria-hidden="true">
-            <div class="ticker-track">
-              <span>MEDIA COVERAGE • INTERVIEWS • CONTENT CREATION • EVENTS • BEST CLUB AWARD • BISKRA UNIVERSITY • </span>
-              <span>MEDIA COVERAGE • INTERVIEWS • CONTENT CREATION • EVENTS • BEST CLUB AWARD • BISKRA UNIVERSITY • </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- C. Short Club Introduction -->
-      <section id="about" class="section-wrapper about-section">
         <div class="container">
-          <div class="about-grid">
-            <!-- Main Editorial Text -->
-            <div class="about-editorial">
-              <span class="section-badge">من نحن • Our Story</span>
-              <h2 class="section-title">
-                صوت طلابي يُلهم، وعدسة توثق نبض كلية العلوم والتكنولوجيا
-              </h2>
-              <p class="about-lead">
-                إيكوفيرس هو النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة، مساحة طلابية تجمع بين الإعلام، الإبداع وصناعة التجارب. نعمل بشغف على التغطيات الإعلامية، المقابلات، صناعة المحتوى وتنظيم وصناعة الفعاليات، لننقل الحياة الجامعية بصورة أكثر قربًا وتأثيرًا.
+          <div class="hero-meta-top font-latin">
+            <span>MEDIA CLUB</span>
+            <span>BISKRA — FST</span>
+          </div>
+
+          <div class="hero-editorial-grid">
+            <div class="hero-text-block">
+              <h1 class="hero-main-title">EchOverse</h1>
+              <div class="hero-faculty-label">النادي الإعلامي لكلية العلوم والتكنولوجيا</div>
+              <div class="hero-uni-label">جامعة محمد خيضر بسكرة</div>
+
+              <p class="hero-statement">
+                نروي الحياة الجامعية كما نعيشها.
               </p>
-              <p class="about-secondary">
-                تأسس النادي ليكون الواجهة الإعلامية وصانع التجارب لطلبة الكلية، حيث نوظف الإمكانيات والمهارات الشابة في التصوير، التقديم، الإخراج، وصناعة المحتوى الرقمي، لنرتقي بالمشهد الطلابي ونبرز مكانة جامعة محمد خيضر بسكرة كصرح علمي متألق.
-              </p>
-            </div>
 
-            <!-- Core Values / Editorial Pillars -->
-            <div class="about-pillars">
-              <div class="pillar-item">
-                <div class="pillar-index font-latin">01</div>
-                <div class="pillar-content">
-                  <h3 class="pillar-title">توثيق احترافي بروح طلابية</h3>
-                  <p class="pillar-text">
-                    نواكب كافة المحافل والندوات والمعارض العلمية، موفرين تغطية بصرية شاملة تحافظ على أرشيف الكلية وتبرز إنجازاتها.
-                  </p>
-                </div>
-              </div>
-
-              <div class="pillar-item">
-                <div class="pillar-index font-latin">02</div>
-                <div class="pillar-content">
-                  <h3 class="pillar-title">منبر للحوار وتبادل الأفكار</h3>
-                  <p class="pillar-text">
-                    نصنع لقاءات ومقابلات تفاعلية تقرب المسافات بين الطلبة والأساتذة وإدارة الكلية، وتتيح للجميع مشاركة تجاربهم ومشاريعهم.
-                  </p>
-                </div>
-              </div>
-
-              <div class="pillar-item">
-                <div class="pillar-index font-latin">03</div>
-                <div class="pillar-content">
-                  <h3 class="pillar-title">صناعة الحدث والتجارب</h3>
-                  <p class="pillar-text">
-                    لا نكتفي بالنقل والمشاهدة؛ بل نبتكر فعاليات طلابية نوعية، ورشات تكوينية، ومبادرات تنبض بالطاقة والإيجابية.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- D. Featured Team + Dean Photo -->
-      <section id="featured-photo" class="section-wrapper dean-feature-section">
-        <div class="container">
-          <div class="section-header text-center">
-            <span class="section-badge">فريق واحد، رؤية مشتركة • United Team</span>
-            <h2 class="section-title">
-              بين شغف الطلبة ودعم القيادة الأكاديمية
-            </h2>
-            <p class="section-subtitle">
-              يمثل نادي EchOverse همزة الوصل الإعلامية في كلية العلوم والتكنولوجيا، مدعومًا بثقة عمادة الكلية وإدارتها في قيادة المشهد الإعلامي الطلابي.
-            </p>
-          </div>
-
-          <div class="dean-showcase-frame">
-            <div
-              class="dean-image-container"
-              data-lightbox-index="0"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة فريق EchOverse رفقة عميد الكلية بالحجم الكامل"
-            >
-              <picture>
-                <source srcset="./assets/team-dean-MN7nS-G3.webp" type="image/webp" />
-                <img
-                  src="./assets/og-image-Dvm2V0gq.jpg"
-                  alt="فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة"
-                  class="dean-image"
-                  loading="eager"
-                  width="2560"
-                  height="1707"
-                />
-              </picture>
-
-              <div class="dean-overlay-tag">
-                <span class="dean-tag-pill">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                  <span>اللقاء الرسمي مع عمادة الكلية</span>
-                </span>
-                <button type="button" class="btn-expand-hint" aria-label="تكبير الصورة" tabIndex="-1">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                  <span>تكبير الصورة</span>
-                </button>
-              </div>
-            </div>
-
-            <figcaption class="dean-caption-bar">
-              <div class="caption-text-block">
-                <h3 class="caption-headline">فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا</h3>
-                <p class="caption-description">
-                  صورة تذكارية رسمية تجمع أعضاء وفريق عمل نادي EchOverse مع السيد عميد كلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة، تتويجًا للتعاون المستمر وثقة الإدارة في الإشراف على التغطيات والأنشطة الطلابية.
-                </p>
-              </div>
-              <div class="caption-meta">
-                <span class="meta-badge">جامعة محمد خيضر بسكرة</span>
-                <span class="meta-badge">اللجنة الإعلامية والتنظيمية</span>
-              </div>
-            </figcaption>
-          </div>
-        </div>
-      </section>
-
-      <!-- E. What We Do (Activities) -->
-      <section id="activities" class="section-wrapper activities-section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge">ماذا نصنع؟ • What We Do</span>
-            <h2 class="section-title">محاور نشاطنا الإعلامي في الحرم الجامعي</h2>
-            <p class="section-subtitle">
-              نجمع بين العتاد الاحترافي والشغف الطلابي لتقديم منظومة إعلامية متكاملة تليق بكلية العلوم والتكنولوجيا وجامعة بسكرة.
-            </p>
-          </div>
-
-          <div class="activities-grid">
-            <!-- 1. Media Coverage -->
-            <article class="activity-card">
-              <div class="activity-top-row">
-                <div class="activity-icon-box">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-                </div>
-                <span class="activity-number font-latin">01</span>
-              </div>
-              <div class="activity-body">
-                <div class="activity-heading-wrap">
-                  <h3 class="activity-title">التغطيات الإعلامية</h3>
-                  <span class="activity-title-en font-latin">Media Coverage</span>
-                </div>
-                <p class="activity-description">
-                  مواكبة وتوثيق الفعاليات، المؤتمرات، والنشاطات الجامعية بالصورة عالية الجودة والفيديو الاحترافي لنقل تفاصيل الحدث أولاً بأول.
-                </p>
-                <div class="activity-tags-wrap">
-                  <span class="activity-tag">تصوير فوتوغرافي</span>
-                  <span class="activity-tag">فيديو عالي الدقة</span>
-                  <span class="activity-tag">تغطية ميدانية فورية</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 2. Interviews -->
-            <article class="activity-card">
-              <div class="activity-top-row">
-                <div class="activity-icon-box">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
-                </div>
-                <span class="activity-number font-latin">02</span>
-              </div>
-              <div class="activity-body">
-                <div class="activity-heading-wrap">
-                  <h3 class="activity-title">المقابلات والحوارات</h3>
-                  <span class="activity-title-en font-latin">Interviews & Talks</span>
-                </div>
-                <p class="activity-description">
-                  فتح مساحات للحوار الهادف وإجراء لقاءات مع الطلبة المبتكرين، الأساتذة، والضيوف لتوثيق قصص النجاح وإثراء الوعي الأكاديمي.
-                </p>
-                <div class="activity-tags-wrap">
-                  <span class="activity-tag">لقاءات حوارية</span>
-                  <span class="activity-tag">حوارات مع الأساتذة</span>
-                  <span class="activity-tag">بودكاست طلابي</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 3. Content Creation -->
-            <article class="activity-card">
-              <div class="activity-top-row">
-                <div class="activity-icon-box">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="2.18" ry="2.18"/><line x1="7" x2="7" y1="2" y2="8"/><line x1="12" x2="12" y1="2" y2="8"/><line x1="17" x2="17" y1="2" y2="8"/><line x1="2" x2="22" y1="8" y2="8"/></svg>
-                </div>
-                <span class="activity-number font-latin">03</span>
-              </div>
-              <div class="activity-body">
-                <div class="activity-heading-wrap">
-                  <h3 class="activity-title">صناعة المحتوى</h3>
-                  <span class="activity-title-en font-latin">Content Creation</span>
-                </div>
-                <p class="activity-description">
-                  تحويل الأفكار والطاقات الطلابية إلى محتوى بصري وتفاعلي مميز (ريلز، تصميم جرافيكي، وتغطيات قصيرة) يخاطب جيل الشباب.
-                </p>
-                <div class="activity-tags-wrap">
-                  <span class="activity-tag">فيديوهات قصيرة (Reels)</span>
-                  <span class="activity-tag">تصميم جرافيكي</span>
-                  <span class="activity-tag">سرد قصصي (Storytelling)</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 4. Event Production -->
-            <article class="activity-card">
-              <div class="activity-top-row">
-                <div class="activity-icon-box">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m12 14 1 2 2.2.3-1.6 1.6.4 2.1-2-1-2 1 .4-2.1-1.6-1.6 2.2-.3Z"/></svg>
-                </div>
-                <span class="activity-number font-latin">04</span>
-              </div>
-              <div class="activity-body">
-                <div class="activity-heading-wrap">
-                  <h3 class="activity-title">تنظيم وصناعة الفعاليات</h3>
-                  <span class="activity-title-en font-latin">Event Production</span>
-                </div>
-                <p class="activity-description">
-                  المساهمة الفاعلة في تخطيط، تصميم، وإخراج الفعاليات والملتقيات الجامعية وصناعة تجارب طلابية ملهمة ومحفزة تخلد في الذاكرة.
-                </p>
-                <div class="activity-tags-wrap">
-                  <span class="activity-tag">إدارة الفعاليات</span>
-                  <span class="activity-tag">تنسيق المنصات</span>
-                  <span class="activity-tag">صناعة التجارب</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- F. Achievement / Best Club Award -->
-      <section id="achievement" class="section-wrapper achievement-section">
-        <div class="container">
-          <div class="achievement-card">
-            <div class="achievement-grid">
-              <!-- Left/Text Content Column -->
-              <div class="achievement-info">
-                <div class="achievement-badge-pill">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1 .45-1 1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-1c0-.55-.45-1-1-1h-2c-.55 0-1-.45-1-1v-2.34"/><path d="M18 4H6v7a6 6 0 0 0 12 0V4Z"/></svg>
-                  <span>إنجاز نفخر به • Official Honor</span>
-                </div>
-
-                <h2 class="achievement-main-title">
-                  <span class="award-title-highlight">أفضل نادي لكلية العلوم والتكنولوجيا</span>
-                  <span class="award-subtitle font-latin">Best Club of the Faculty of Science and Technology</span>
-                </h2>
-
-                <div class="achievement-university-label">
-                  <span>جامعة محمد خيضر بسكرة</span>
-                </div>
-
-                <p class="achievement-body-text">
-                  تتويج رسمي يعكس تميز النادي واحترافية أعضائه في توثيق وتنظيم أبرز محطات الكلية وصناعة حضور إعلامي ملهم داخل الحرم الجامعي.
-                </p>
-
-                <div class="achievement-highlights-list">
-                  <div class="achieve-point">
-                    <span class="point-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
-                    <span>اعتراف رسمي من عمادة الكلية بجهود التغطيات والتوثيق</span>
-                  </div>
-                  <div class="achieve-point">
-                    <span class="point-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
-                    <span>تسليم درع التميز بحضور قيادات الجامعة والأساتذة</span>
-                  </div>
-                  <div class="achieve-point">
-                    <span class="point-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
-                    <span>دافع مستمر لصناعة أثر طلابي وإعلامي متجدد</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Right/Visual Column: Authentic Award Photos -->
-              <div class="achievement-visuals">
-                <div class="award-photos-pair">
-                  <!-- Photo 1: Faculty Ceremony with Dean -->
-                  <div
-                    class="award-photo-wrapper main-award-photo"
-                    data-lightbox-index="1"
-                    role="button"
-                    tabIndex="0"
-                    aria-label="عرض صورة تكريم النادي مع عميد الكلية في قاعة عمر عساسي"
-                  >
-                    <picture>
-                      <source srcset="./assets/award-faculty-Bs4JQehe.webp" type="image/webp" />
-                      <img
-                        src="./assets/award-faculty-DRYqJp3j.jpg"
-                        alt="أعضاء نادي EchOverse يتسلمون درع التميز وجائزة أفضل نادي رفقة عميد كلية العلوم والتكنولوجيا"
-                        class="award-img"
-                        loading="lazy"
-                        width="1280"
-                        height="853"
-                      />
-                    </picture>
-                    <div class="award-photo-caption">
-                      <span>درع التميز رفقة عميد الكلية والأساتذة</span>
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-
-                  <!-- Photo 2: Ceremony with University Rector -->
-                  <div
-                    class="award-photo-wrapper sub-award-photo"
-                    data-lightbox-index="2"
-                    role="button"
-                    tabIndex="0"
-                    aria-label="عرض صورة تكريم النادي مع مدير جامعة محمد خيضر بسكرة"
-                  >
-                    <picture>
-                      <source srcset="./assets/award-rector-0496sAln.webp" type="image/webp" />
-                      <img
-                        src="./assets/award-rector-tPFh-h9-.jpg"
-                        alt="أعضاء النادي برفقة السيد مدير جامعة محمد خيضر بسكرة بدرع التميز"
-                        class="award-img"
-                        loading="lazy"
-                        width="1280"
-                        height="853"
-                      />
-                    </picture>
-                    <div class="award-photo-caption">
-                      <span>التكريم رفقة السيد مدير الجامعة</span>
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Decorative Subtle Crest / Stamp -->
-                <div class="award-stamp-badge">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                  <div class="stamp-text font-latin">BEST CLUB AWARD</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- G. Photo Gallery -->
-      <section id="gallery" class="section-wrapper gallery-section">
-        <div class="container">
-          <div class="section-header text-center">
-            <span class="section-badge">معرض الصور • Visual Journal</span>
-            <h2 class="section-title">من قلب EchOverse</h2>
-            <p class="section-subtitle">
-              لقطات أصيلة توثق حضورنا الميداني، اعتراف الكلية بجهودنا، وشغف الفريق المستمر في نقل نبض الجامعة.
-            </p>
-
-            <!-- Filter Tabs -->
-            <div class="gallery-filter-bar" role="tablist" aria-label="تصفية معرض الصور">
-              <button type="button" class="filter-btn active" data-filter="all">جميع اللقطات</button>
-              <button type="button" class="filter-btn" data-filter="awards">التكريمات والإنجازات</button>
-              <button type="button" class="filter-btn" data-filter="events">الفعاليات والتغطيات</button>
-              <button type="button" class="filter-btn" data-filter="behind">الكواليس والمعدات</button>
-            </div>
-          </div>
-
-          <!-- Magazine-style Editorial Photo Grid (All 6 photos) -->
-          <div class="gallery-editorial-grid">
-            <!-- 0. Team with Dean -->
-            <figure
-              class="gallery-card card-landscape card-featured"
-              data-category="events"
-              data-lightbox-index="0"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة فريق EchOverse رفقة عميد الكلية"
-            >
-              <div class="gallery-card-inner">
-                <picture>
-                  <source srcset="./assets/team-dean-MN7nS-G3.webp" type="image/webp" />
-                  <img src="./assets/og-image-Dvm2V0gq.jpg" alt="فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا" class="gallery-img" loading="lazy" />
-                </picture>
-                <div class="gallery-card-overlay">
-                  <div class="gallery-card-meta">
-                    <span class="gallery-category-badge">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-                      <span>الفعاليات والتغطيات</span>
-                    </span>
-                    <div class="gallery-expand-icon" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                  <div class="gallery-card-info">
-                    <h3 class="gallery-item-title">فريق EchOverse رفقة عميد الكلية</h3>
-                    <p class="gallery-item-caption">صورة رسمية تجمع أعضاء نادي EchOverse رفقة عميد كلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة.</p>
-                  </div>
-                </div>
-              </div>
-            </figure>
-
-            <!-- 1. Award Faculty -->
-            <figure
-              class="gallery-card card-landscape card-featured"
-              data-category="awards"
-              data-lightbox-index="1"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة درع التميز وجائزة أفضل نادي"
-            >
-              <div class="gallery-card-inner">
-                <picture>
-                  <source srcset="./assets/award-faculty-Bs4JQehe.webp" type="image/webp" />
-                  <img src="./assets/award-faculty-DRYqJp3j.jpg" alt="لحظة تسلم درع التميز وجائزة أفضل نادي" class="gallery-img" loading="lazy" />
-                </picture>
-                <div class="gallery-card-overlay">
-                  <div class="gallery-card-meta">
-                    <span class="gallery-category-badge">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                      <span>التكريمات والإنجازات</span>
-                    </span>
-                    <div class="gallery-expand-icon" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                  <div class="gallery-card-info">
-                    <h3 class="gallery-item-title">درع التميز وجائزة أفضل نادي</h3>
-                    <p class="gallery-item-caption">أعضاء النادي يتسلمون درع التميز وشهادة التقدير رفقة عميد الكلية والأساتذة في قاعة المحاضرات عمر عساسي.</p>
-                  </div>
-                </div>
-              </div>
-            </figure>
-
-            <!-- 2. Award Rector -->
-            <figure
-              class="gallery-card card-landscape"
-              data-category="awards"
-              data-lightbox-index="2"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة تكريم النادي مع مدير الجامعة"
-            >
-              <div class="gallery-card-inner">
-                <picture>
-                  <source srcset="./assets/award-rector-0496sAln.webp" type="image/webp" />
-                  <img src="./assets/award-rector-tPFh-h9-.jpg" alt="تكريم النادي مع السيد مدير جامعة محمد خيضر بسكرة" class="gallery-img" loading="lazy" />
-                </picture>
-                <div class="gallery-card-overlay">
-                  <div class="gallery-card-meta">
-                    <span class="gallery-category-badge">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                      <span>التكريمات والإنجازات</span>
-                    </span>
-                    <div class="gallery-expand-icon" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                  <div class="gallery-card-info">
-                    <h3 class="gallery-item-title">تكريم النادي مع مدير الجامعة</h3>
-                    <p class="gallery-item-caption">لحظة فخر تجمع أعضاء النادي مع السيد مدير جامعة محمد خيضر بسكرة بدرع التميز الطلابي.</p>
-                  </div>
-                </div>
-              </div>
-            </figure>
-
-            <!-- 3. Showcase Presentation -->
-            <figure
-              class="gallery-card card-landscape"
-              data-category="behind"
-              data-lightbox-index="3"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة استعراض الإنتاج الإعلامي للقيادة الجامعية"
-            >
-              <div class="gallery-card-inner">
-                <picture>
-                  <source srcset="./assets/showcase-presentation-DSjb5Ubx.webp" type="image/webp" />
-                  <img src="./assets/showcase-presentation-OoYSUAjE.jpg" alt="استعراض الإنتاج الإعلامي الرقمي للقيادة الجامعية" class="gallery-img" loading="lazy" />
-                </picture>
-                <div class="gallery-card-overlay">
-                  <div class="gallery-card-meta">
-                    <span class="gallery-category-badge">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="2.18" ry="2.18"/><line x1="7" x2="7" y1="2" y2="8"/><line x1="12" x2="12" y1="2" y2="8"/><line x1="17" x2="17" y1="2" y2="8"/><line x1="2" x2="22" y1="8" y2="8"/></svg>
-                      <span>الكواليس والإنتاج</span>
-                    </span>
-                    <div class="gallery-expand-icon" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                  <div class="gallery-card-info">
-                    <h3 class="gallery-item-title">استعراض الإنتاج الإعلامي للقيادة الجامعية</h3>
-                    <p class="gallery-item-caption">عضو النادي يستعرض المشاريع والإنتاجات الرقمية أمام مدير الجامعة وعميد كلية العلوم والتكنولوجيا.</p>
-                  </div>
-                </div>
-              </div>
-            </figure>
-
-            <!-- 4. Media Equipment -->
-            <figure
-              class="gallery-card card-portrait"
-              data-category="behind"
-              data-lightbox-index="4"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة عتاد التصوير والمعدات الصوتية الميدانية"
-            >
-              <div class="gallery-card-inner">
-                <picture>
-                  <source srcset="./assets/media-equipment-DEWrQBYc.webp" type="image/webp" />
-                  <img src="./assets/media-equipment-CwIyL6wV.jpg" alt="عتاد التصوير والمعدات الصوتية الميدانية" class="gallery-img" loading="lazy" />
-                </picture>
-                <div class="gallery-card-overlay">
-                  <div class="gallery-card-meta">
-                    <span class="gallery-category-badge">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="2.18" ry="2.18"/><line x1="7" x2="7" y1="2" y2="8"/><line x1="12" x2="12" y1="2" y2="8"/><line x1="17" x2="17" y1="2" y2="8"/><line x1="2" x2="22" y1="8" y2="8"/></svg>
-                      <span>الكواليس والإنتاج</span>
-                    </span>
-                    <div class="gallery-expand-icon" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                  <div class="gallery-card-info">
-                    <h3 class="gallery-item-title">عتاد التصوير والمعدات الصوتية الميدانية</h3>
-                    <p class="gallery-item-caption">استعراض كاميرات التصوير الاحترافية والميكروفونات وأجهزة البث الميداني المستخدمة في التغطيات الحية.</p>
-                  </div>
-                </div>
-              </div>
-            </figure>
-
-            <!-- 5. Event Outdoor -->
-            <figure
-              class="gallery-card card-landscape"
-              data-category="events"
-              data-lightbox-index="5"
-              role="button"
-              tabIndex="0"
-              aria-label="عرض صورة تغطية الفعاليات الميدانية للكلية"
-            >
-              <div class="gallery-card-inner">
-                <picture>
-                  <source srcset="./assets/event-outdoor-BoM-C5pO.webp" type="image/webp" />
-                  <img src="./assets/event-outdoor-BiODJ2qN.jpg" alt="تغطية الفعاليات الميدانية أمام مبنى الكلية" class="gallery-img" loading="lazy" />
-                </picture>
-                <div class="gallery-card-overlay">
-                  <div class="gallery-card-meta">
-                    <span class="gallery-category-badge">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-                      <span>الفعاليات والتغطيات</span>
-                    </span>
-                    <div class="gallery-expand-icon" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                    </div>
-                  </div>
-                  <div class="gallery-card-info">
-                    <h3 class="gallery-item-title">تغطية الفعاليات الميدانية للكلية</h3>
-                    <p class="gallery-item-caption">أعضاء النادي بالبطاقات التنظيمية برفقة عميد الكلية ورؤساء الأقسام والأساتذة في الساحة الأكاديمية.</p>
-                  </div>
-                </div>
-              </div>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- H. Social & Contact CTA -->
-      <section id="contact" class="section-wrapper social-cta-section">
-        <div class="container container-narrow">
-          <div class="social-cta-box">
-            <div class="section-header text-center mb-0">
-              <span class="section-badge">تواصل معنا • Connect With Us</span>
-              <h2 class="section-title">ابقَ قريبًا من EchOverse</h2>
-              <p class="section-subtitle">
-                تابع تغطياتنا الميدانية، مقابلاتنا الحصرية، وأحدث فعاليات كلية العلوم والتكنولوجيا عبر منصاتنا الرقمية الرسمية.
-              </p>
-            </div>
-
-            <!-- 3 Prominent Action Cards -->
-            <div class="social-cards-grid">
-              <!-- 1. Instagram -->
-              <div class="social-channel-card card-instagram">
-                <div class="channel-icon-wrap insta-bg">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                </div>
-                <div class="channel-details">
-                  <span class="channel-platform font-latin">Instagram</span>
-                  <span class="channel-handle font-latin">@echoverse.club</span>
-                  <p class="channel-desc">
-                    النافذة الأسرع لمتابعة القصص اليومية، التغطيات الحية، وريلز الفعاليات.
-                  </p>
-                </div>
+              <div class="hero-action-row">
                 <a
                   href="https://www.instagram.com/echoverse.club/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-instagram w-full"
-                  aria-label="متابعة نادي EchOverse على إنستغرام"
+                  class="hero-insta-btn"
                 >
-                  <span>متابعة على إنستغرام</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span>Instagram</span>
+                  <span aria-hidden="true">↗</span>
                 </a>
+                <a href="#about" class="hero-explore-link">اكتشف النادي ↓</a>
               </div>
+            </div>
 
-              <!-- 2. Facebook -->
-              <div class="social-channel-card card-facebook">
-                <div class="channel-icon-wrap fb-bg">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                </div>
-                <div class="channel-details">
-                  <span class="channel-platform font-latin">Facebook</span>
-                  <span class="channel-handle font-latin">EchOverse Club</span>
-                  <p class="channel-desc">
-                    الصفحة الرسمية للألبومات الكاملة، البيانات، ومواعيد الأنشطة الجامعية.
-                  </p>
-                </div>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61587251284713"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-facebook w-full"
-                  aria-label="زيارة صفحة نادي EchOverse على فيسبوك"
-                >
-                  <span>زيارة صفحتنا على فيسبوك</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-                </a>
+            <div class="hero-visual-block">
+              <picture>
+                <source srcset="./assets/showcase-presentation-DSjb5Ubx.webp" type="image/webp" />
+                <img
+                  src="./assets/showcase-presentation-OoYSUAjE.jpg"
+                  alt="عرض أعمال النادي الإعلامية أمام قيادة الجامعة"
+                  class="hero-lead-photo"
+                  loading="eager"
+                  width="1280"
+                  height="853"
+                />
+              </picture>
+              <div class="hero-photo-caption">
+                <span>UNIVERSITY OF BISKRA</span>
+                <span>ARCHIVE 2024</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <!-- 3. Official Email -->
-              <div class="social-channel-card card-email">
-                <div class="channel-icon-wrap mail-bg">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                </div>
-                <div class="channel-details">
-                  <span class="channel-platform">البريد الإلكتروني الرسمي</span>
-                  <span class="channel-handle email-address font-latin">
-                    echoverse_club@univ-biskra.dz
-                  </span>
-                  <p class="channel-desc">
-                    للتنسيق الإعلامي، تغطية الفعاليات، ومقترحات الشراكة الطلابية.
-                  </p>
-                </div>
-                <div class="email-actions-group">
-                  <a
-                    href="mailto:echoverse_club@univ-biskra.dz"
-                    class="btn btn-primary email-main-btn"
-                    aria-label="إرسال بريد إلكتروني إلى نادي EchOverse"
-                  >
-                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    <span>راسلنا الآن</span>
-                  </a>
+      <!-- 02 — WHO WE ARE (Concise Editorial Statement) -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-editorial-wrap">
+            <h2 class="section-editorial-tag">من نحن</h2>
 
-                  <button
-                    type="button"
-                    id="copy-email-btn"
-                    class="btn btn-secondary email-copy-btn"
-                    aria-label="نسخ عنوان البريد الإلكتروني"
-                    title="نسخ البريد الإلكتروني"
-                  >
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                    <span>نسخ</span>
-                  </button>
+            <div class="about-editorial-text">
+              <p class="about-main-paragraph">
+                إيكوفيرس هو النادي الإعلامي لكلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة. نعمل على التغطيات الإعلامية، المقابلات، صناعة المحتوى وتنظيم الفعاليات، ونوثّق تفاصيل الحياة الجامعية من داخل الكلية.
+              </p>
+              <p class="about-sub-paragraph">
+                مجموعة طلابية تصنع المحتوى من الميدان، بعدساتنا وأصواتنا، لتقريب النشاطات والمبادرات الأكاديمية والطلابية ونقلها بصورة واقعية.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 — TEAM WITH DEAN (Prominent Full Photograph) -->
+      <section id="team-dean" class="dean-spread-section">
+        <div class="container">
+          <div
+            class="dean-spread-frame"
+            data-lightbox-index="5"
+            role="button"
+            tabIndex="0"
+            aria-label="عرض صورة فريق EchOverse مع عميد الكلية"
+          >
+            <picture>
+              <source srcset="./assets/team-dean-MN7nS-G3.webp" type="image/webp" />
+              <img
+                src="./assets/og-image-Dvm2V0gq.jpg"
+                alt="فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا"
+                class="dean-spread-photo"
+                loading="lazy"
+                width="2560"
+                height="1707"
+              />
+            </picture>
+          </div>
+
+          <div class="dean-spread-caption-bar">
+            <h2 class="dean-caption-title">فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا</h2>
+            <span class="dean-caption-meta">كلية العلوم والتكنولوجيا • جامعة محمد خيضر بسكرة</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 — WHAT WE DO (Editorial Capability List) -->
+      <section id="activities" class="capabilities-section">
+        <div class="container">
+          <div class="capabilities-header-row">
+            <h2 class="capabilities-title">أنشطتنا</h2>
+          </div>
+
+          <div class="capabilities-list">
+            <!-- 01 -->
+            <div class="capability-row">
+              <h3 class="capability-name">التغطيات الإعلامية</h3>
+              <p class="capability-desc">نوثّق فعاليات الكلية بالصورة والفيديو.</p>
+            </div>
+
+            <!-- 02 -->
+            <div class="capability-row">
+              <h3 class="capability-name">المقابلات</h3>
+              <p class="capability-desc">نلتقي بالطلبة والأساتذة وضيوف الفعاليات.</p>
+            </div>
+
+            <!-- 03 -->
+            <div class="capability-row">
+              <h3 class="capability-name">صناعة المحتوى</h3>
+              <p class="capability-desc">نحوّل اللحظات والأفكار إلى محتوى بصري.</p>
+            </div>
+
+            <!-- 04 -->
+            <div class="capability-row">
+              <h3 class="capability-name">تنظيم وصناعة الفعاليات</h3>
+              <p class="capability-desc">نشارك في التنظيم وصناعة التجربة الإعلامية للحدث.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 — ACHIEVEMENT (Best Club Award Spread) -->
+      <section id="achievement" class="achievement-section">
+        <div class="container">
+          <div class="achievement-editorial-grid">
+            <div class="achievement-text-col">
+              <h2 class="achievement-headline">أفضل نادي</h2>
+              <div class="achievement-faculty">كلية العلوم والتكنولوجيا</div>
+              <div class="achievement-uni">جامعة محمد خيضر بسكرة</div>
+
+              <p class="achievement-quote">
+                «إنجاز نعتز به، ومسؤولية تدفعنا لتقديم الأفضل.»
+              </p>
+            </div>
+
+            <div
+              class="achievement-photo-frame"
+              data-lightbox-index="4"
+              role="button"
+              tabIndex="0"
+              aria-label="عرض صورة التتويج بجائزة أفضل نادي"
+            >
+              <picture>
+                <source srcset="./assets/award-faculty-Bs4JQehe.webp" type="image/webp" />
+                <img
+                  src="./assets/award-faculty-DRYqJp3j.jpg"
+                  alt="تسلم درع التميز وجائزة أفضل نادي مع عميد الكلية والأساتذة"
+                  class="achievement-photo"
+                  loading="lazy"
+                  width="1280"
+                  height="853"
+                />
+              </picture>
+              <div class="achievement-photo-caption">
+                <span>قاعة المحاضرات عمر عساسي</span>
+                <span>درع التميز</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 — VISUAL ARCHIVE (Asymmetric Editorial Pacing) -->
+      <section id="archive" class="archive-section">
+        <div class="container">
+          <div class="archive-header">
+            <h2 class="archive-title">الأرشيف</h2>
+            <p class="archive-desc">لقطات من الميدان والفعاليات والعمل المشترك.</p>
+          </div>
+
+          <div class="archive-magazine-grid">
+            <!-- 1. Outdoor Campus Coverage (Wide 8-cols) -->
+            <div
+              class="archive-item grid-span-8 aspect-cinematic"
+              data-lightbox-index="0"
+              role="button"
+              tabIndex="0"
+              aria-label="عرض صورة تغطية الفعاليات الميدانية"
+            >
+              <picture>
+                <source srcset="./assets/event-outdoor-BoM-C5pO.webp" type="image/webp" />
+                <img src="./assets/event-outdoor-BiODJ2qN.jpg" alt="تغطية الفعاليات الميدانية أمام مبنى الكلية" class="archive-img" loading="lazy" />
+              </picture>
+              <div class="archive-caption">تغطية الفعاليات والأنشطة الميدانية أمام مبنى الكلية.</div>
+            </div>
+
+            <!-- 2. Equipment & Gear (Portrait 4-cols) -->
+            <div
+              class="archive-item grid-span-4 aspect-portrait"
+              data-lightbox-index="1"
+              role="button"
+              tabIndex="0"
+              aria-label="عرض صورة عتاد التصوير والمعدات الصوتية"
+            >
+              <picture>
+                <source srcset="./assets/media-equipment-DEWrQBYc.webp" type="image/webp" />
+                <img src="./assets/media-equipment-CwIyL6wV.jpg" alt="عتاد التصوير والمعدات الصوتية الميدانية" class="archive-img" loading="lazy" />
+              </picture>
+              <div class="archive-caption">عتاد التصوير والمعدات الصوتية الميدانية الخاصة بالنادي.</div>
+            </div>
+
+            <!-- 3. Showcase to Rector & Dean (Medium 6-cols) -->
+            <div
+              class="archive-item grid-span-6 aspect-standard"
+              data-lightbox-index="2"
+              role="button"
+              tabIndex="0"
+              aria-label="عرض صورة استعراض الإنتاج الإعلامي"
+            >
+              <picture>
+                <source srcset="./assets/showcase-presentation-DSjb5Ubx.webp" type="image/webp" />
+                <img src="./assets/showcase-presentation-OoYSUAjE.jpg" alt="استعراض الإنتاج والمحتوى الإعلامي" class="archive-img" loading="lazy" />
+              </picture>
+              <div class="archive-caption">استعراض الإنتاج والمحتوى الإعلامي أمام قيادة الجامعة والكلية.</div>
+            </div>
+
+            <!-- 4. Ceremony with Rector (Medium 6-cols) -->
+            <div
+              class="archive-item grid-span-6 aspect-standard"
+              data-lightbox-index="3"
+              role="button"
+              tabIndex="0"
+              aria-label="عرض صورة تكريم النادي مع مدير الجامعة"
+            >
+              <picture>
+                <source srcset="./assets/award-rector-0496sAln.webp" type="image/webp" />
+                <img src="./assets/award-rector-tPFh-h9-.jpg" alt="تكريم النادي مع مدير جامعة بسكرة" class="archive-img" loading="lazy" />
+              </picture>
+              <div class="archive-caption">تكريم النادي بدرع التميز رفقة السيد مدير جامعة محمد خيضر بسكرة.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 — CONTACT / CONNECT -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-heading-col">
+              <h2 class="contact-title">ابقَ على تواصل</h2>
+              <p class="contact-desc">
+                تابع تغطياتنا اليومية أو راسلنا لأي استفسار أو تنسيق إعلامي.
+              </p>
+            </div>
+
+            <div class="contact-links-list">
+              <a
+                href="https://www.instagram.com/echoverse.club/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link-row"
+              >
+                <span>Instagram</span>
+                <span class="contact-arrow" aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61587251284713"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link-row"
+              >
+                <span>Facebook</span>
+                <span class="contact-arrow" aria-hidden="true">↗</span>
+              </a>
+
+              <div class="email-row-interactive">
+                <span class="email-address-text">echoverse_club@univ-biskra.dz</span>
+                <div class="email-btn-group">
+                  <a href="mailto:echoverse_club@univ-biskra.dz" class="btn-minimal">مراسلة ↗</a>
+                  <button type="button" id="copy-email-btn" class="btn-minimal">نسخ</button>
                 </div>
               </div>
             </div>
@@ -866,465 +386,264 @@
       </section>
     </main>
 
-    <!-- I. Footer -->
+    <!-- 08 — MINIMAL FOOTER -->
     <footer class="site-footer">
-      <div class="container footer-container">
-        <div class="footer-top-row">
-          <!-- Brand & Identity Column -->
-          <div class="footer-brand-column">
-            <div class="footer-brand-group">
-              <span class="footer-brand-title font-latin">EchOverse</span>
-              <span class="footer-brand-subtitle">النادي الإعلامي لكلية العلوم والتكنولوجيا</span>
-            </div>
-            <p class="footer-affiliation-text">
-              كلية العلوم والتكنولوجيا • جامعة محمد خيضر بسكرة
-            </p>
-            <p class="footer-motto-quote">
-              «نصنع الحدث، نوثّق اللحظة، ونروي القصة.»
-            </p>
-          </div>
-
-          <!-- Quick Nav Links -->
-          <div class="footer-nav-column">
-            <h4 class="footer-col-heading">روابط سريعة</h4>
-            <ul class="footer-links-list">
-              <li><a href="#hero">الرئيسية</a></li>
-              <li><a href="#about">من نحن</a></li>
-              <li><a href="#featured-photo">لقاء العميد</a></li>
-              <li><a href="#activities">أنشطتنا</a></li>
-              <li><a href="#achievement">إنجازنا التكريمي</a></li>
-              <li><a href="#gallery">معرض الصور</a></li>
-            </ul>
-          </div>
-
-          <!-- Social & Contact -->
-          <div class="footer-social-column">
-            <h4 class="footer-col-heading">قنواتنا الرقمية</h4>
-            <div class="footer-social-icons">
-              <a
-                href="https://www.instagram.com/echoverse.club/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-social-icon insta-hover"
-                aria-label="إنستغرام نادي EchOverse"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61587251284713"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-social-icon fb-hover"
-                aria-label="فيسبوك نادي EchOverse"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </a>
-              <a
-                href="mailto:echoverse_club@univ-biskra.dz"
-                class="footer-social-icon mail-hover"
-                aria-label="مراسلة نادي EchOverse"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              </a>
-            </div>
-            <div class="footer-contact-item">
-              <span class="font-latin">echoverse_club@univ-biskra.dz</span>
-            </div>
-          </div>
+      <div class="container footer-inner">
+        <div class="footer-identity">
+          <div class="footer-name">EchOverse Club</div>
+          <div class="footer-faculty">كلية العلوم والتكنولوجيا — جامعة محمد خيضر بسكرة</div>
         </div>
 
-        <div class="footer-divider"></div>
-
-        <div class="footer-bottom-row">
-          <p class="footer-copyright font-latin">
-            © <span id="current-year"></span> EchOverse Club. All rights reserved.
-          </p>
-
-          <p class="footer-tagline-ar">
-            الهوية الرقمية الرسمية لنادي EchOverse الإعلامي — جامعة بسكرة
-          </p>
-
-          <button
-            type="button"
-            class="footer-back-to-top"
-            aria-label="العودة إلى أعلى الصفحة"
-          >
-            <span>إلى الأعلى</span>
-            <span class="back-arrow-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-            </span>
-          </button>
+        <div class="footer-bottom-meta">
+          <a href="https://www.instagram.com/echoverse.club/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://www.facebook.com/profile.php?id=61587251284713" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          <span>© <span id="footer-year"></span> EchOverse</span>
         </div>
       </div>
     </footer>
 
-    <!-- Accessible Lightbox Modal -->
-    <div id="lightbox-modal" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="عارض الصور المكبرة">
-      <div class="lightbox-top-bar">
-        <div id="lightbox-counter" class="lightbox-counter font-latin">
-          <span>1</span> / <span>6</span>
-        </div>
-        <button type="button" class="lightbox-close-btn" aria-label="إغلاق عارض الصور">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
-        </button>
+    <!-- Minimalist Lightbox Modal -->
+    <div id="editorial-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="عارض الصور">
+      <div class="lightbox-header">
+        <span id="lightbox-counter" class="lightbox-counter">1 / 6</span>
+        <button type="button" class="lightbox-close" aria-label="إغلاق">✕</button>
       </div>
 
-      <div class="lightbox-stage">
-        <button type="button" class="lightbox-nav-btn btn-prev" aria-label="الصورة السابقة">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </button>
+      <div class="lightbox-body">
+        <button type="button" class="lightbox-arrow arrow-prev" aria-label="السابق">›</button>
 
-        <div class="lightbox-image-wrap">
-          <picture>
-            <source id="lightbox-webp-source" srcset="./assets/team-dean-MN7nS-G3.webp" type="image/webp" />
-            <img id="lightbox-img" src="./assets/og-image-Dvm2V0gq.jpg" alt="صورة مكبرة" class="lightbox-img" />
-          </picture>
-        </div>
+        <picture>
+          <source id="lightbox-webp" srcset="./assets/event-outdoor-BoM-C5pO.webp" type="image/webp" />
+          <img id="lightbox-img" src="./assets/event-outdoor-BiODJ2qN.jpg" alt="صورة مكبرة" class="lightbox-img-element" />
+        </picture>
 
-        <button type="button" class="lightbox-nav-btn btn-next" aria-label="الصورة التالية">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-        </button>
+        <button type="button" class="lightbox-arrow arrow-next" aria-label="التالي">‹</button>
       </div>
 
-      <div class="lightbox-bottom-bar">
-        <div class="lightbox-caption-box">
-          <h4 id="lightbox-title" class="lightbox-title"></h4>
-          <p id="lightbox-caption" class="lightbox-caption"></p>
-        </div>
+      <div class="lightbox-footer">
+        <p id="lightbox-caption" class="lightbox-caption-text"></p>
       </div>
     </div>
 
-    <!-- Production JavaScript (Standalone, zero dependencies, works offline and locally) -->
+    <!-- Minimal Offline Vanilla Script (Zero external dependencies) -->
     <script>
 /**
- * EchOverse Club — Official Website JavaScript
- * Pure vanilla JavaScript — Zero dependencies, 100% offline & local file:/// compatible
+ * EchOverse Club — Editorial Platform JavaScript
  */
 (function () {
   'use strict';
 
-  var galleryPhotos = [
+  var archivePhotos = [
     {
-      id: "team-dean",
-      webp: "images/team-dean.webp",
-      jpg: "images/team-dean.jpg",
-      title: "فريق EchOverse رفقة عميد الكلية",
-      caption: "صورة رسمية تجمع أعضاء نادي EchOverse رفقة عميد كلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة.",
-      category: "events",
-      categoryLabel: "الفعاليات والتغطيات"
-    },
-    {
-      id: "award-faculty",
-      webp: "images/award-faculty.webp",
-      jpg: "images/award-faculty.jpg",
-      title: "درع التميز وجائزة أفضل نادي",
-      caption: "أعضاء النادي يتسلمون درع التميز وشهادة التقدير رفقة عميد الكلية والأساتذة في قاعة المحاضرات عمر عساسي.",
-      category: "awards",
-      categoryLabel: "التكريمات والإنجازات"
-    },
-    {
-      id: "award-rector",
-      webp: "images/award-rector.webp",
-      jpg: "images/award-rector.jpg",
-      title: "تكريم النادي مع مدير الجامعة",
-      caption: "لحظة فخر تجمع أعضاء النادي مع السيد مدير جامعة محمد خيضر بسكرة بدرع التميز الطلابي.",
-      category: "awards",
-      categoryLabel: "التكريمات والإنجازات"
-    },
-    {
-      id: "showcase-presentation",
-      webp: "images/showcase-presentation.webp",
-      jpg: "images/showcase-presentation.jpg",
-      title: "استعراض الإنتاج الإعلامي للقيادة الجامعية",
-      caption: "عضو النادي يستعرض المشاريع والإنتاجات الرقمية أمام مدير الجامعة وعميد كلية العلوم والتكنولوجيا.",
-      category: "behind",
-      categoryLabel: "الكواليس والإنتاج"
-    },
-    {
-      id: "media-equipment",
-      webp: "images/media-equipment.webp",
-      jpg: "images/media-equipment.jpg",
-      title: "عتاد التصوير والمعدات الصوتية الميدانية",
-      caption: "استعراض كاميرات التصوير الاحترافية والميكروفونات وأجهزة البث الميداني المستخدمة في التغطيات الحية.",
-      category: "behind",
-      categoryLabel: "الكواليس والإنتاج"
-    },
-    {
-      id: "event-outdoor",
       webp: "images/event-outdoor.webp",
       jpg: "images/event-outdoor.jpg",
-      title: "تغطية الفعاليات الميدانية للكلية",
-      caption: "أعضاء النادي بالبطاقات التنظيمية برفقة عميد الكلية ورؤساء الأقسام والأساتذة في الساحة الأكاديمية.",
-      category: "events",
-      categoryLabel: "الفعاليات والتغطيات"
+      caption: "تغطية الفعاليات والأنشطة الميدانية أمام مبنى الكلية."
+    },
+    {
+      webp: "images/media-equipment.webp",
+      jpg: "images/media-equipment.jpg",
+      caption: "عتاد التصوير والمعدات الصوتية الميدانية الخاصة بالنادي."
+    },
+    {
+      webp: "images/showcase-presentation.webp",
+      jpg: "images/showcase-presentation.jpg",
+      caption: "استعراض الإنتاج والمحتوى الإعلامي أمام قيادة الجامعة والكلية."
+    },
+    {
+      webp: "images/award-rector.webp",
+      jpg: "images/award-rector.jpg",
+      caption: "تكريم النادي بدرع التميز رفقة السيد مدير جامعة محمد خيضر بسكرة."
+    },
+    {
+      webp: "images/award-faculty.webp",
+      jpg: "images/award-faculty.jpg",
+      caption: "تسلم درع التميز وجائزة أفضل نادي بحضور عميد الكلية والأساتذة."
+    },
+    {
+      webp: "images/team-dean.webp",
+      jpg: "images/team-dean.jpg",
+      caption: "فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا."
     }
   ];
 
-  var currentLightboxIndex = 0;
+  var currentIndex = 0;
   var touchStartX = null;
   var touchEndX = null;
 
   document.addEventListener('DOMContentLoaded', function () {
-    // 1. Navbar Scroll Effect
-    var navbarHeader = document.querySelector('.navbar-header');
-    if (navbarHeader) {
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 20) {
-          navbarHeader.classList.add('is-scrolled');
-        } else {
-          navbarHeader.classList.remove('is-scrolled');
-        }
-      }, { passive: true });
-    }
+    // 1. Mobile Menu
+    var toggleBtn = document.querySelector('.nav-mobile-toggle');
+    var mobileOverlay = document.querySelector('.mobile-nav-overlay');
+    var closeBtn = document.querySelector('.mobile-close-btn');
+    var mobileLinks = document.querySelectorAll('.mobile-nav-links a');
 
-    // 2. Mobile Menu Drawer
-    var mobileToggleBtn = document.querySelector('.mobile-toggle-btn');
-    var mobileDrawerBackdrop = document.querySelector('.mobile-drawer-backdrop');
-    var closeDrawerBtn = document.querySelector('.close-drawer-btn');
-    var mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
-    function openMobileMenu() {
-      if (mobileDrawerBackdrop) {
-        mobileDrawerBackdrop.classList.add('active');
+    function openMenu() {
+      if (mobileOverlay) {
+        mobileOverlay.classList.add('is-active');
         document.body.style.overflow = 'hidden';
       }
     }
 
-    function closeMobileMenu() {
-      if (mobileDrawerBackdrop) {
-        mobileDrawerBackdrop.classList.remove('active');
+    function closeMenu() {
+      if (mobileOverlay) {
+        mobileOverlay.classList.remove('is-active');
         document.body.style.overflow = '';
       }
     }
 
-    if (mobileToggleBtn) {
-      mobileToggleBtn.addEventListener('click', function () {
-        if (mobileDrawerBackdrop && mobileDrawerBackdrop.classList.contains('active')) {
-          closeMobileMenu();
-        } else {
-          openMobileMenu();
-        }
-      });
-    }
-
-    if (closeDrawerBtn) {
-      closeDrawerBtn.addEventListener('click', closeMobileMenu);
-    }
-
-    if (mobileDrawerBackdrop) {
-      mobileDrawerBackdrop.addEventListener('click', function (e) {
-        if (e.target === mobileDrawerBackdrop) {
-          closeMobileMenu();
-        }
-      });
-    }
-
-    mobileNavLinks.forEach(function (link) {
-      link.addEventListener('click', closeMobileMenu);
+    if (toggleBtn) toggleBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    mobileLinks.forEach(function (l) {
+      l.addEventListener('click', closeMenu);
     });
 
-    // 3. Smooth scrolling for internal anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-      anchor.addEventListener('click', function (e) {
+    // 2. Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
         var href = this.getAttribute('href');
         if (href && href.length > 1) {
-          var targetElem = document.querySelector(href);
-          if (targetElem) {
+          var target = document.querySelector(href);
+          if (target) {
             e.preventDefault();
-            targetElem.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({ behavior: 'smooth' });
           }
         }
       });
     });
 
-    // 4. Dynamic Year in Footer
-    var yearElem = document.getElementById('current-year');
-    if (yearElem) {
-      yearElem.textContent = new Date().getFullYear();
+    // 3. Dynamic Footer Year
+    var yearEl = document.getElementById('footer-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
     }
 
-    // 5. Back to Top Button
-    var backToTopBtn = document.querySelector('.footer-back-to-top');
-    if (backToTopBtn) {
-      backToTopBtn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-
-    // 6. Copy Email Button with visual feedback
-    var copyEmailBtn = document.getElementById('copy-email-btn');
-    if (copyEmailBtn) {
-      copyEmailBtn.addEventListener('click', function () {
+    // 4. Copy Email Button
+    var copyBtn = document.getElementById('copy-email-btn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
         var email = 'echoverse_club@univ-biskra.dz';
         var self = this;
-        var originalHTML = self.innerHTML;
+        var originalText = self.textContent;
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(email).then(showCopied, fallbackCopy);
+          navigator.clipboard.writeText(email).then(showSuccess, fallbackCopy);
         } else {
           fallbackCopy();
         }
 
         function fallbackCopy() {
-          var textArea = document.createElement('textarea');
-          textArea.value = email;
-          document.body.appendChild(textArea);
-          textArea.select();
+          var ta = document.createElement('textarea');
+          ta.value = email;
+          document.body.appendChild(ta);
+          ta.select();
           try {
             document.execCommand('copy');
-            showCopied();
-          } catch (err) {
-            console.error('Fallback copy failed', err);
+            showSuccess();
+          } catch (e) {
+            console.error('Copy failed', e);
           }
-          document.body.removeChild(textArea);
+          document.body.removeChild(ta);
         }
 
-        function showCopied() {
-          self.classList.add('copied-active');
-          self.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span>تم النسخ!</span>';
+        function showSuccess() {
+          self.textContent = 'تم النسخ';
+          self.classList.add('copied-success');
           setTimeout(function () {
-            self.classList.remove('copied-active');
-            self.innerHTML = originalHTML;
-          }, 2400);
+            self.textContent = originalText;
+            self.classList.remove('copied-success');
+          }, 2000);
         }
       });
     }
 
-    // 7. Gallery Category Filtering
-    var filterBtns = document.querySelectorAll('.gallery-filter-bar .filter-btn');
-    var galleryCards = document.querySelectorAll('.gallery-editorial-grid .gallery-card');
+    // 5. Lightbox
+    var modal = document.getElementById('editorial-lightbox');
+    var modalImg = document.getElementById('lightbox-img');
+    var modalWebp = document.getElementById('lightbox-webp');
+    var modalCaption = document.getElementById('lightbox-caption');
+    var modalCounter = document.getElementById('lightbox-counter');
+    var modalClose = document.querySelector('.lightbox-close');
+    var prevBtn = document.querySelector('.lightbox-arrow.arrow-prev');
+    var nextBtn = document.querySelector('.lightbox-arrow.arrow-next');
+    var stage = document.querySelector('.lightbox-body');
 
-    filterBtns.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        filterBtns.forEach(function (b) { b.classList.remove('active'); });
-        this.classList.add('active');
+    function updateLightbox(idx) {
+      if (idx < 0) idx = archivePhotos.length - 1;
+      if (idx >= archivePhotos.length) idx = 0;
+      currentIndex = idx;
 
-        var filter = this.getAttribute('data-filter');
-        galleryCards.forEach(function (card) {
-          var cardCategory = card.getAttribute('data-category');
-          if (filter === 'all' || cardCategory === filter) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-
-    // 8. Lightbox Elements
-    var lightboxOverlay = document.getElementById('lightbox-modal');
-    var lightboxImg = document.getElementById('lightbox-img');
-    var lightboxWebpSource = document.getElementById('lightbox-webp-source');
-    var lightboxTitle = document.getElementById('lightbox-title');
-    var lightboxCaption = document.getElementById('lightbox-caption');
-    var lightboxCounter = document.getElementById('lightbox-counter');
-    var lightboxCloseBtn = document.querySelector('.lightbox-close-btn');
-    var lightboxPrevBtn = document.querySelector('.lightbox-nav-btn.btn-prev');
-    var lightboxNextBtn = document.querySelector('.lightbox-nav-btn.btn-next');
-    var lightboxStage = document.querySelector('.lightbox-stage');
-
-    function updateLightbox(index) {
-      if (index < 0) index = galleryPhotos.length - 1;
-      if (index >= galleryPhotos.length) index = 0;
-      currentLightboxIndex = index;
-
-      var photo = galleryPhotos[currentLightboxIndex];
+      var photo = archivePhotos[currentIndex];
       if (!photo) return;
 
-      if (lightboxWebpSource) lightboxWebpSource.srcset = photo.webp;
-      if (lightboxImg) {
-        lightboxImg.src = photo.jpg;
-        lightboxImg.alt = photo.title;
+      if (modalWebp) modalWebp.srcset = photo.webp;
+      if (modalImg) {
+        modalImg.src = photo.jpg;
+        modalImg.alt = photo.caption;
       }
-      if (lightboxTitle) lightboxTitle.textContent = photo.title;
-      if (lightboxCaption) lightboxCaption.textContent = photo.caption;
-      if (lightboxCounter) {
-        lightboxCounter.innerHTML = '<span>' + (currentLightboxIndex + 1) + '</span> / <span>' + galleryPhotos.length + '</span>';
+      if (modalCaption) modalCaption.textContent = photo.caption;
+      if (modalCounter) {
+        modalCounter.textContent = (currentIndex + 1) + ' / ' + archivePhotos.length;
       }
     }
 
-    function openLightbox(index) {
-      updateLightbox(index);
-      if (lightboxOverlay) {
-        lightboxOverlay.classList.add('is-open');
+    function openLightbox(idx) {
+      updateLightbox(idx);
+      if (modal) {
+        modal.classList.add('is-open');
         document.body.style.overflow = 'hidden';
       }
     }
 
     function closeLightbox() {
-      if (lightboxOverlay) {
-        lightboxOverlay.classList.remove('is-open');
+      if (modal) {
+        modal.classList.remove('is-open');
         document.body.style.overflow = '';
       }
     }
 
-    function prevPhoto() {
-      updateLightbox(currentLightboxIndex - 1);
-    }
-
-    function nextPhoto() {
-      updateLightbox(currentLightboxIndex + 1);
-    }
-
-    document.querySelectorAll('[data-lightbox-index]').forEach(function (elem) {
-      elem.addEventListener('click', function () {
+    document.querySelectorAll('[data-lightbox-index]').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
         var idx = parseInt(this.getAttribute('data-lightbox-index'), 10);
-        if (!isNaN(idx)) {
-          openLightbox(idx);
-        }
+        if (!isNaN(idx)) openLightbox(idx);
       });
-      elem.addEventListener('keydown', function (e) {
+      trigger.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           var idx = parseInt(this.getAttribute('data-lightbox-index'), 10);
-          if (!isNaN(idx)) {
-            openLightbox(idx);
-          }
+          if (!isNaN(idx)) openLightbox(idx);
         }
       });
     });
 
-    if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
-    if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', prevPhoto);
-    if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', nextPhoto);
+    if (modalClose) modalClose.addEventListener('click', closeLightbox);
+    if (prevBtn) prevBtn.addEventListener('click', function () { updateLightbox(currentIndex - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { updateLightbox(currentIndex + 1); });
 
-    if (lightboxOverlay) {
-      lightboxOverlay.addEventListener('click', function (e) {
-        if (e.target === lightboxOverlay) {
-          closeLightbox();
-        }
+    if (modal) {
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeLightbox();
       });
     }
 
     window.addEventListener('keydown', function (e) {
-      if (!lightboxOverlay || !lightboxOverlay.classList.contains('is-open')) return;
-
-      if (e.key === 'Escape') {
-        closeLightbox();
-      } else if (e.key === 'ArrowRight') {
-        prevPhoto();
-      } else if (e.key === 'ArrowLeft') {
-        nextPhoto();
-      }
+      if (!modal || !modal.classList.contains('is-open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') updateLightbox(currentIndex - 1);
+      if (e.key === 'ArrowLeft') updateLightbox(currentIndex + 1);
     });
 
-    if (lightboxStage) {
-      lightboxStage.addEventListener('touchstart', function (e) {
+    if (stage) {
+      stage.addEventListener('touchstart', function (e) {
         touchStartX = e.targetTouches[0].clientX;
       }, { passive: true });
-
-      lightboxStage.addEventListener('touchmove', function (e) {
+      stage.addEventListener('touchmove', function (e) {
         touchEndX = e.targetTouches[0].clientX;
       }, { passive: true });
-
-      lightboxStage.addEventListener('touchend', function () {
+      stage.addEventListener('touchend', function () {
         if (touchStartX === null || touchEndX === null) return;
         var diff = touchStartX - touchEndX;
-        if (diff > 45) {
-          nextPhoto();
-        } else if (diff < -45) {
-          prevPhoto();
-        }
+        if (diff > 45) updateLightbox(currentIndex + 1);
+        if (diff < -45) updateLightbox(currentIndex - 1);
         touchStartX = null;
         touchEndX = null;
       });

@@ -1,339 +1,222 @@
 /**
- * EchOverse Club — Official Website JavaScript
+ * EchOverse Club — Editorial Platform JavaScript
  * Pure vanilla JavaScript — Zero dependencies, 100% offline & local file:/// compatible
  */
 
 (function () {
   'use strict';
 
-  // Photo Archive Data
-  var galleryPhotos = [
+  var archivePhotos = [
     {
-      id: "team-dean",
-      webp: "images/team-dean.webp",
-      jpg: "images/team-dean.jpg",
-      title: "فريق EchOverse رفقة عميد الكلية",
-      caption: "صورة رسمية تجمع أعضاء نادي EchOverse رفقة عميد كلية العلوم والتكنولوجيا بجامعة محمد خيضر بسكرة.",
-      category: "events",
-      categoryLabel: "الفعاليات والتغطيات"
-    },
-    {
-      id: "award-faculty",
-      webp: "images/award-faculty.webp",
-      jpg: "images/award-faculty.jpg",
-      title: "درع التميز وجائزة أفضل نادي",
-      caption: "أعضاء النادي يتسلمون درع التميز وشهادة التقدير رفقة عميد الكلية والأساتذة في قاعة المحاضرات عمر عساسي.",
-      category: "awards",
-      categoryLabel: "التكريمات والإنجازات"
-    },
-    {
-      id: "award-rector",
-      webp: "images/award-rector.webp",
-      jpg: "images/award-rector.jpg",
-      title: "تكريم النادي مع مدير الجامعة",
-      caption: "لحظة فخر تجمع أعضاء النادي مع السيد مدير جامعة محمد خيضر بسكرة بدرع التميز الطلابي.",
-      category: "awards",
-      categoryLabel: "التكريمات والإنجازات"
-    },
-    {
-      id: "showcase-presentation",
-      webp: "images/showcase-presentation.webp",
-      jpg: "images/showcase-presentation.jpg",
-      title: "استعراض الإنتاج الإعلامي للقيادة الجامعية",
-      caption: "عضو النادي يستعرض المشاريع والإنتاجات الرقمية أمام مدير الجامعة وعميد كلية العلوم والتكنولوجيا.",
-      category: "behind",
-      categoryLabel: "الكواليس والإنتاج"
-    },
-    {
-      id: "media-equipment",
-      webp: "images/media-equipment.webp",
-      jpg: "images/media-equipment.jpg",
-      title: "عتاد التصوير والمعدات الصوتية الميدانية",
-      caption: "استعراض كاميرات التصوير الاحترافية والميكروفونات وأجهزة البث الميداني المستخدمة في التغطيات الحية.",
-      category: "behind",
-      categoryLabel: "الكواليس والإنتاج"
-    },
-    {
-      id: "event-outdoor",
       webp: "images/event-outdoor.webp",
       jpg: "images/event-outdoor.jpg",
-      title: "تغطية الفعاليات الميدانية للكلية",
-      caption: "أعضاء النادي بالبطاقات التنظيمية برفقة عميد الكلية ورؤساء الأقسام والأساتذة في الساحة الأكاديمية.",
-      category: "events",
-      categoryLabel: "الفعاليات والتغطيات"
+      caption: "تغطية الفعاليات والأنشطة الميدانية أمام مبنى الكلية."
+    },
+    {
+      webp: "images/media-equipment.webp",
+      jpg: "images/media-equipment.jpg",
+      caption: "عتاد التصوير والمعدات الصوتية الميدانية الخاصة بالنادي."
+    },
+    {
+      webp: "images/showcase-presentation.webp",
+      jpg: "images/showcase-presentation.jpg",
+      caption: "استعراض الإنتاج والمحتوى الإعلامي أمام قيادة الجامعة والكلية."
+    },
+    {
+      webp: "images/award-rector.webp",
+      jpg: "images/award-rector.jpg",
+      caption: "تكريم النادي بدرع التميز رفقة السيد مدير جامعة محمد خيضر بسكرة."
+    },
+    {
+      webp: "images/award-faculty.webp",
+      jpg: "images/award-faculty.jpg",
+      caption: "تسلم درع التميز وجائزة أفضل نادي بحضور عميد الكلية والأساتذة."
+    },
+    {
+      webp: "images/team-dean.webp",
+      jpg: "images/team-dean.jpg",
+      caption: "فريق EchOverse رفقة عميد كلية العلوم والتكنولوجيا."
     }
   ];
 
-  // Current Lightbox State
-  var currentLightboxIndex = 0;
+  var currentIndex = 0;
   var touchStartX = null;
   var touchEndX = null;
 
   document.addEventListener('DOMContentLoaded', function () {
-    // 1. Navbar Scroll Effect
-    var navbarHeader = document.querySelector('.navbar-header');
-    if (navbarHeader) {
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 20) {
-          navbarHeader.classList.add('is-scrolled');
-        } else {
-          navbarHeader.classList.remove('is-scrolled');
-        }
-      }, { passive: true });
-    }
+    // 1. Mobile Menu
+    var toggleBtn = document.querySelector('.nav-mobile-toggle');
+    var mobileOverlay = document.querySelector('.mobile-nav-overlay');
+    var closeBtn = document.querySelector('.mobile-close-btn');
+    var mobileLinks = document.querySelectorAll('.mobile-nav-links a');
 
-    // 2. Mobile Menu Drawer
-    var mobileToggleBtn = document.querySelector('.mobile-toggle-btn');
-    var mobileDrawerBackdrop = document.querySelector('.mobile-drawer-backdrop');
-    var closeDrawerBtn = document.querySelector('.close-drawer-btn');
-    var mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
-    function openMobileMenu() {
-      if (mobileDrawerBackdrop) {
-        mobileDrawerBackdrop.classList.add('active');
+    function openMenu() {
+      if (mobileOverlay) {
+        mobileOverlay.classList.add('is-active');
         document.body.style.overflow = 'hidden';
       }
     }
 
-    function closeMobileMenu() {
-      if (mobileDrawerBackdrop) {
-        mobileDrawerBackdrop.classList.remove('active');
+    function closeMenu() {
+      if (mobileOverlay) {
+        mobileOverlay.classList.remove('is-active');
         document.body.style.overflow = '';
       }
     }
 
-    if (mobileToggleBtn) {
-      mobileToggleBtn.addEventListener('click', function () {
-        if (mobileDrawerBackdrop && mobileDrawerBackdrop.classList.contains('active')) {
-          closeMobileMenu();
-        } else {
-          openMobileMenu();
-        }
-      });
-    }
-
-    if (closeDrawerBtn) {
-      closeDrawerBtn.addEventListener('click', closeMobileMenu);
-    }
-
-    if (mobileDrawerBackdrop) {
-      mobileDrawerBackdrop.addEventListener('click', function (e) {
-        if (e.target === mobileDrawerBackdrop) {
-          closeMobileMenu();
-        }
-      });
-    }
-
-    mobileNavLinks.forEach(function (link) {
-      link.addEventListener('click', closeMobileMenu);
+    if (toggleBtn) toggleBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    mobileLinks.forEach(function (l) {
+      l.addEventListener('click', closeMenu);
     });
 
-    // 3. Smooth scrolling for internal anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-      anchor.addEventListener('click', function (e) {
+    // 2. Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
         var href = this.getAttribute('href');
         if (href && href.length > 1) {
-          var targetElem = document.querySelector(href);
-          if (targetElem) {
+          var target = document.querySelector(href);
+          if (target) {
             e.preventDefault();
-            targetElem.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({ behavior: 'smooth' });
           }
         }
       });
     });
 
-    // 4. Dynamic Year in Footer
-    var yearElem = document.getElementById('current-year');
-    if (yearElem) {
-      yearElem.textContent = new Date().getFullYear();
+    // 3. Dynamic Footer Year
+    var yearEl = document.getElementById('footer-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
     }
 
-    // 5. Back to Top Button
-    var backToTopBtn = document.querySelector('.footer-back-to-top');
-    if (backToTopBtn) {
-      backToTopBtn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-
-    // 6. Copy Email Button with visual feedback
-    var copyEmailBtn = document.getElementById('copy-email-btn');
-    if (copyEmailBtn) {
-      copyEmailBtn.addEventListener('click', function () {
+    // 4. Copy Email Button
+    var copyBtn = document.getElementById('copy-email-btn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
         var email = 'echoverse_club@univ-biskra.dz';
         var self = this;
-        var originalHTML = self.innerHTML;
+        var originalText = self.textContent;
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(email).then(showCopied, fallbackCopy);
+          navigator.clipboard.writeText(email).then(showSuccess, fallbackCopy);
         } else {
           fallbackCopy();
         }
 
         function fallbackCopy() {
-          var textArea = document.createElement('textarea');
-          textArea.value = email;
-          document.body.appendChild(textArea);
-          textArea.select();
+          var ta = document.createElement('textarea');
+          ta.value = email;
+          document.body.appendChild(ta);
+          ta.select();
           try {
             document.execCommand('copy');
-            showCopied();
-          } catch (err) {
-            console.error('Fallback copy failed', err);
+            showSuccess();
+          } catch (e) {
+            console.error('Copy failed', e);
           }
-          document.body.removeChild(textArea);
+          document.body.removeChild(ta);
         }
 
-        function showCopied() {
-          self.classList.add('copied-active');
-          self.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span>تم النسخ!</span>';
+        function showSuccess() {
+          self.textContent = 'تم النسخ';
+          self.classList.add('copied-success');
           setTimeout(function () {
-            self.classList.remove('copied-active');
-            self.innerHTML = originalHTML;
-          }, 2400);
+            self.textContent = originalText;
+            self.classList.remove('copied-success');
+          }, 2000);
         }
       });
     }
 
-    // 7. Gallery Category Filtering
-    var filterBtns = document.querySelectorAll('.gallery-filter-bar .filter-btn');
-    var galleryCards = document.querySelectorAll('.gallery-editorial-grid .gallery-card');
+    // 5. Lightbox
+    var modal = document.getElementById('editorial-lightbox');
+    var modalImg = document.getElementById('lightbox-img');
+    var modalWebp = document.getElementById('lightbox-webp');
+    var modalCaption = document.getElementById('lightbox-caption');
+    var modalCounter = document.getElementById('lightbox-counter');
+    var modalClose = document.querySelector('.lightbox-close');
+    var prevBtn = document.querySelector('.lightbox-arrow.arrow-prev');
+    var nextBtn = document.querySelector('.lightbox-arrow.arrow-next');
+    var stage = document.querySelector('.lightbox-body');
 
-    filterBtns.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        filterBtns.forEach(function (b) { b.classList.remove('active'); });
-        this.classList.add('active');
+    function updateLightbox(idx) {
+      if (idx < 0) idx = archivePhotos.length - 1;
+      if (idx >= archivePhotos.length) idx = 0;
+      currentIndex = idx;
 
-        var filter = this.getAttribute('data-filter');
-        galleryCards.forEach(function (card) {
-          var cardCategory = card.getAttribute('data-category');
-          if (filter === 'all' || cardCategory === filter) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-
-    // 8. Lightbox Elements
-    var lightboxOverlay = document.getElementById('lightbox-modal');
-    var lightboxImg = document.getElementById('lightbox-img');
-    var lightboxWebpSource = document.getElementById('lightbox-webp-source');
-    var lightboxTitle = document.getElementById('lightbox-title');
-    var lightboxCaption = document.getElementById('lightbox-caption');
-    var lightboxCounter = document.getElementById('lightbox-counter');
-    var lightboxCloseBtn = document.querySelector('.lightbox-close-btn');
-    var lightboxPrevBtn = document.querySelector('.lightbox-nav-btn.btn-prev');
-    var lightboxNextBtn = document.querySelector('.lightbox-nav-btn.btn-next');
-    var lightboxStage = document.querySelector('.lightbox-stage');
-
-    function updateLightbox(index) {
-      if (index < 0) index = galleryPhotos.length - 1;
-      if (index >= galleryPhotos.length) index = 0;
-      currentLightboxIndex = index;
-
-      var photo = galleryPhotos[currentLightboxIndex];
+      var photo = archivePhotos[currentIndex];
       if (!photo) return;
 
-      if (lightboxWebpSource) lightboxWebpSource.srcset = photo.webp;
-      if (lightboxImg) {
-        lightboxImg.src = photo.jpg;
-        lightboxImg.alt = photo.title;
+      if (modalWebp) modalWebp.srcset = photo.webp;
+      if (modalImg) {
+        modalImg.src = photo.jpg;
+        modalImg.alt = photo.caption;
       }
-      if (lightboxTitle) lightboxTitle.textContent = photo.title;
-      if (lightboxCaption) lightboxCaption.textContent = photo.caption;
-      if (lightboxCounter) {
-        lightboxCounter.innerHTML = '<span>' + (currentLightboxIndex + 1) + '</span> / <span>' + galleryPhotos.length + '</span>';
+      if (modalCaption) modalCaption.textContent = photo.caption;
+      if (modalCounter) {
+        modalCounter.textContent = (currentIndex + 1) + ' / ' + archivePhotos.length;
       }
     }
 
-    function openLightbox(index) {
-      updateLightbox(index);
-      if (lightboxOverlay) {
-        lightboxOverlay.classList.add('is-open');
+    function openLightbox(idx) {
+      updateLightbox(idx);
+      if (modal) {
+        modal.classList.add('is-open');
         document.body.style.overflow = 'hidden';
       }
     }
 
     function closeLightbox() {
-      if (lightboxOverlay) {
-        lightboxOverlay.classList.remove('is-open');
+      if (modal) {
+        modal.classList.remove('is-open');
         document.body.style.overflow = '';
       }
     }
 
-    function prevPhoto() {
-      updateLightbox(currentLightboxIndex - 1);
-    }
-
-    function nextPhoto() {
-      updateLightbox(currentLightboxIndex + 1);
-    }
-
-    // Attach Click Handlers to all expandable photo triggers
-    document.querySelectorAll('[data-lightbox-index]').forEach(function (elem) {
-      elem.addEventListener('click', function () {
+    document.querySelectorAll('[data-lightbox-index]').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
         var idx = parseInt(this.getAttribute('data-lightbox-index'), 10);
-        if (!isNaN(idx)) {
-          openLightbox(idx);
-        }
+        if (!isNaN(idx)) openLightbox(idx);
       });
-      elem.addEventListener('keydown', function (e) {
+      trigger.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           var idx = parseInt(this.getAttribute('data-lightbox-index'), 10);
-          if (!isNaN(idx)) {
-            openLightbox(idx);
-          }
+          if (!isNaN(idx)) openLightbox(idx);
         }
       });
     });
 
-    if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
-    if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', prevPhoto);
-    if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', nextPhoto);
+    if (modalClose) modalClose.addEventListener('click', closeLightbox);
+    if (prevBtn) prevBtn.addEventListener('click', function () { updateLightbox(currentIndex - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { updateLightbox(currentIndex + 1); });
 
-    if (lightboxOverlay) {
-      lightboxOverlay.addEventListener('click', function (e) {
-        if (e.target === lightboxOverlay) {
-          closeLightbox();
-        }
+    if (modal) {
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeLightbox();
       });
     }
 
-    // Keyboard support for Lightbox
     window.addEventListener('keydown', function (e) {
-      if (!lightboxOverlay || !lightboxOverlay.classList.contains('is-open')) return;
-
-      if (e.key === 'Escape') {
-        closeLightbox();
-      } else if (e.key === 'ArrowRight') {
-        // In Arabic RTL: ArrowRight navigates to previous or next photo
-        prevPhoto();
-      } else if (e.key === 'ArrowLeft') {
-        nextPhoto();
-      }
+      if (!modal || !modal.classList.contains('is-open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') updateLightbox(currentIndex - 1);
+      if (e.key === 'ArrowLeft') updateLightbox(currentIndex + 1);
     });
 
-    // Touch Swipe gestures for smartphones
-    if (lightboxStage) {
-      lightboxStage.addEventListener('touchstart', function (e) {
+    if (stage) {
+      stage.addEventListener('touchstart', function (e) {
         touchStartX = e.targetTouches[0].clientX;
       }, { passive: true });
-
-      lightboxStage.addEventListener('touchmove', function (e) {
+      stage.addEventListener('touchmove', function (e) {
         touchEndX = e.targetTouches[0].clientX;
       }, { passive: true });
-
-      lightboxStage.addEventListener('touchend', function () {
+      stage.addEventListener('touchend', function () {
         if (touchStartX === null || touchEndX === null) return;
         var diff = touchStartX - touchEndX;
-        if (diff > 45) {
-          nextPhoto();
-        } else if (diff < -45) {
-          prevPhoto();
-        }
+        if (diff > 45) updateLightbox(currentIndex + 1);
+        if (diff < -45) updateLightbox(currentIndex - 1);
         touchStartX = null;
         touchEndX = null;
       });
